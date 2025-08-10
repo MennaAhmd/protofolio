@@ -6,15 +6,14 @@
   --dark-primary: #252422;
   --light-gray: #f4f3ee;
   --bg-dark: #463f3a;
-  --text-color: white; /* إضافة متغير جديد للون النص */
+  --text-color: white; 
 }
 
 [data-theme="light"] {
   --dark-primary: #f4f3ee;
   --light-gray: #252422;
   --bg-dark: #bcb8b1;
-  --text-color: #252422; /* لون النص في الوضع الفاتح */
-}
+  --text-color: #252422; }
 
 * {
   margin: 0;
@@ -26,13 +25,12 @@ html {
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
   background-color: var(--dark-primary);
-  color: var(--text-color); /* استخدام المتغير الجديد */
+  color: var(--text-color);
 }
 
 body {
   background-color: var(--dark-primary);
-  color: var(--text-color); /* استخدام المتغير الجديد */
-}
+  color: var(--text-color); }
 
 /* Dark/Light Mode Toggle */
 .mode-toggle {
@@ -97,7 +95,7 @@ nav.main-nav ul.nav-list {
 }
 
 nav.main-nav ul.nav-list li a {
-  color: var(--text-color); /* استخدام المتغير الجديد */
+  color: var(--text-color); 
   text-decoration: none;
   font-weight: 600;
   font-size: 1.2rem;
@@ -111,27 +109,7 @@ nav.main-nav ul.nav-list li a:hover {
   transition: color 0.3s ease;
 }
 
-/* Social links*/
-.social-links {
-  order: 3;
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 25px;
-}
-
-.social-links a {
-  color: var(--text-color);
-  font-size: 1.5rem;
-  transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-  color: var(--primary);
-}
-
-/* Main container padding top to avoid overlap with fixed header */
+/* Main container padding  */
 main.container {
   padding-top: 100px;
   max-width: 1100px;
