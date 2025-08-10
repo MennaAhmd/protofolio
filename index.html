@@ -10,11 +10,15 @@
 </head>
 
 <body>
+  <!-- Dark/Light Mode Toggle -->
+  <div class="mode-toggle">
+    <button id="modeToggle" aria-label="Toggle dark mode">
+      <i class="fas fa-moon"></i>
+    </button>
+  </div>
+
   <!-- Header -->
   <header class="main-header">
-    <div class="logo">
-      <a href="index.html"><img src="img/logoweb.png" alt=""></a>
-    </div>
     <nav class="main-nav">
       <ul class="nav-list">
         <li><a href="#hero">Home</a></li>
@@ -24,6 +28,9 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <div class="logo">
+      <a href="index.html"><img src="img/logoweb.png" alt="Menna Ahmed Logo"></a>
+    </div>
     <div class="social-links">
       <a href="https://www.linkedin.com/in/menna-ahmed-security/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
       <a href="https://github.com/MennaAhmd" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -33,187 +40,233 @@
   </header>
 
   <!-- Main Content -->
-    <main class="container">
-        <!-- Hero Section -->
-        <section id="hero" class="hero-section">
-            <div class="hero-content">
-                <h1>Hi, There!<br> I'm <span>Menna Ahmed</span></h1>
-                <p>
-                I am a Penetration Tester and PHP Developer skilled in Common Web Technologies and Familiar with OWASP Top 10 and Secutity tools.
-                I'm passionate about blending design aesthetics with functionality.
-                </p>
+  <main class="container">
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <h1>Hi, There!<br> I'm <span>Menna Ahmed</span></h1>
+        <p>
+          I am a Penetration Tester and PHP Developer skilled in Common Web Technologies and Familiar with OWASP Top 10 and Security tools.
+          I'm passionate about blending design aesthetics with functionality.
+        </p>
 
-                <div class="hero-buttons">
-                <a href="#contact"><button class="btn btn-primary" title="Got a cool project? Let’s work together!">Hire me</button></a>
-                <button class="btn btn-dark-outlined">
-                    <a href="https://drive.google.com/file/d/19qQHwHCSpPsWS_9mlXW_AHjwwKEe1_Ix/view?usp=sharing" download>View My CV</a>
-                </button>
-                </div>
+        <div class="hero-buttons">
+          <a href="#contact"><button class="btn btn-primary" title="Got a cool project? Let’s work together!">Hire me</button></a>
+          <button class="btn btn-dark-outlined">
+            <a href="https://drive.google.com/file/d/19qQHwHCSpPsWS_9mlXW_AHjwwKEe1_Ix/view?usp=sharing" download>View My CV</a>
+          </button>
+        </div>
+      </div>
+      <img src="img/photo.png" alt="Profile Image" class="hero-img" />
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="about-text">
+        <h3>About Me</h3>
+        <h2>I am Penetration Tester & <span>PHP Developer</span></h2>
+        <p>
+          I'm a passionate Junior Penetration Tester with a strong focus on cybersecurity and backend development. Currently training with DEPI, I specialize in vulnerability assessment, ethical hacking, and secure coding practices.
+        </p>
+        <p>
+          My hands-on experience includes working with tools like Burp Suite, Wireshark, and participating in CTF competitions and security labs. I enjoy developing secure, real-world systems using PHP, MySQL, and JavaScript.
+        </p>
+        <a href="#skills" class="btn btn-primary">Know More →</a>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <h2>My <span>Skills</span></h2>
+      <div class="skills-grid">
+        <!-- Card 1 - Cybersecurity -->
+        <div class="skills-card">
+          <img src="img/security.png" alt="Cybersecurity Icon" />
+          <div class="skills-info">
+            <h3>Cybersecurity</h3>
+            <ul>
+              <li><strong>OWASP Top 10</strong>
+                <ul class="sub-list">
+                  <li>SQL Injection</li>
+                  <li>XSS</li>
+                </ul>
+              </li>
+              <li><strong>Security Tools</strong>
+                <ul class="sub-list">
+                  <li>Burp Suite</li>
+                  <li>Wireshark</li>
+                  <li>Metasploit</li>
+                  <li>Nmap</li>
+                  <li>John the Ripper</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 2 - Web Development -->
+        <div class="skills-card">
+          <img src="img/development.png" alt="Web Development Icon" />
+          <div class="skills-info">
+            <h3>Web Development</h3>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>PHP</li>
+              <li>MySQL</li>
+              <li>Bootstrap</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 3 - Certifications -->
+        <div class="skills-card">
+          <img src="img/certificate.png" alt="Certifications Icon" />
+          <div class="skills-info">
+            <h3>Certifications</h3>
+            <ul>
+              <li>Cybersecurity for Beginners</li>
+              <li>HCIA Security V4.0</li>
+              <li>Certified Ethical Hacker (CEH)</li>
+              <li>CompTIA Security+</li>
+              <li>CompTIA Network+</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <h2>My <span>Projects</span></h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="img/tourism.png" alt="Tourism Website" />
+          <div class="project-info">
+            <h3>Tourism Website</h3>
+            <p>a comprehensive tourism website designed to offer travelers a seamless and engaging experience using.</p>
+            <p>Used Tools: HTML5, CSS and JavaScript</p>
+            <div class="project-links">
+              <a href="https://mennaahmd.github.io/Tourisum-website/" target="_blank" class="btn">Live Demo</a>
+              <a href="https://github.com/MennaAhmd/Tourisum-website" target="_blank" class="btn">View Project</a>
             </div>
-            <img src="img/photo.png" alt="Profile Image" class="hero-img" />
-        </section>
+          </div>
+        </div>
 
-
-        <!-- About Section -->
-        <section id="about" class="about-section">
-            <div class="about-text">
-                <h3>About Me</h3>
-                <h2>I am Penetration Tester & <span>PHP Developer</span></h2>
-                <p>
-                I'm a passionate Junior Penetration Tester with a strong focus on cybersecurity and backend development. Currently training with DEPI, I specialize in vulnerability assessment, ethical hacking, and secure coding practices.
-                </p>
-                <p>
-                My hands-on experience includes working with tools like Burp Suite, Wireshark, and participating in CTF competitions and security labs. I enjoy developing secure, real-world systems using PHP, MySQL, and JavaScript.
-                </p>
-                <a href="#skills" class="btn btn-primary">Know More →</a>
+        <div class="project-card">
+          <img src="img/echomart.png" alt="echomart" />
+          <div class="project-info">
+            <h3>E-commerce website</h3>
+            <p>an e-commerce website for selling laptops included with powerful admin panel for managing inventory, orders, and more.</p>
+            <p>Used Tools: HTML5, CSS, JavaScript and Bootstrap for Frontend</p>
+            <p>PHP and MySQL for Backend</p>
+            <div class="project-links">
+              <a href="https://github.com/MennaAhmd/Echomart" target="_blank" class="btn">View Project</a>
             </div>
-        </section>
+          </div>
+        </div>
 
-          <section id="skills" class="skills-section">
-              <h2>My <span>Skills</span></h2>
-              <div class="skills-grid">
-                  <!-- Card 1 - Cybersecurity -->
-                  <div class="skills-card">
-                      <img src="img/security.png" alt="Cybersecurity Icon" />
-                      <div class="skills-info">
-                          <h3>Cybersecurity</h3>
-                          <ul>
-                              <li><strong>OWASP Top 10</strong>
-                                  <ul class="sub-list">
-                                      <li>SQL Injection</li>
-                                      <li>XSS</li>
-                                  </ul>
-                              </li>
-                              <li><strong>Security Tools</strong>
-                                  <ul class="sub-list">
-                                      <li>Burp Suite</li>
-                                      <li>Wireshark</li>
-                                      <li>Metasploit</li>
-                                      <li>Nmap</li>
-                                      <li>John the Ripper</li>
-                                  </ul>
-                              </li>
-                          </ul>
-                      </div>
-                  </div>
-
-                  <!-- Card 2 - Web Development -->
-                  <div class="skills-card">
-                      <img src="img/development.png" alt="Web Development Icon" />
-                      <div class="skills-info">
-                          <h3>Web Development</h3>
-                          <ul>
-                              <li>HTML5</li>
-                              <li>CSS3</li>
-                              <li>JavaScript</li>
-                              <li>PHP</li>
-                              <li>MySQL</li>
-                              <li>Bootstrap</li>
-                          </ul>
-                      </div>
-                  </div>
-
-                  <!-- Card 3 - Certifications -->
-                  <div class="skills-card">
-                      <img src="img/certificate.png" alt="Certifications Icon" />
-                      <div class="skills-info">
-                          <h3>Certifications</h3>
-                          <ul>
-                              <li>Cybersecurity for Beginners</li>
-                              <li>HCIA Security V4.0</li>
-                              <li>Certified Ethical Hacker (CEH)</li>
-                              <li>CompTIA Security+</li>
-                              <li>CompTIA Network+</li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-          </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="projects-section">
-            <h2>My <span>Projects</span></h2>
-            <div class="project-grid">
-                <div class="project-card">
-                <img src="img/tourism.png" alt="Tourism Website" />
-                <div class="project-info">
-                    <h3>Tourism Website</h3>
-                    <p> a comprehensive tourism website designed to offer travelers a seamless and engaging experience using.</p>
-                    <br>
-                    <p>Used Tools: HTML5, CSS and JavaScript</p>
-                    <a href="https://mennaahmd.github.io/Tourisum-website/" target="_blank" class="btn">Live Demo</a>
-                    <a href="https://github.com/MennaAhmd/Tourisum-website" target="_blank" class="btn">View Project</a>
-                </div>
-                </div>
-
-                <div class="project-card">
-                <img src="img/echomart.png" alt="echomart" />
-                <div class="project-info">
-                    <h3>E-commerce website</h3>
-                    <p>an e-commerce website for selling laptops included with powerful admin panel for managing inventory, orders, and more.</p>
-                    <br>
-                    <p>Used Tools: HTML5, CSS, JavaScript and Bootstrap for Frontend</p>
-                    <p>PHP and MySQL for Backend</p>
-                    <a href="https://github.com/MennaAhmd/Echomart" target="_blank" class="btn">View Project</a>
-                </div>
-                </div>
-
-                <div class="project-card">
-                <img src="img/log.png" alt="Sign-in and login" />
-                <div class="project-info">
-                    <h3>Sign-in & login system</h3>
-                    <p>Modern, responsive sign-in and login page in purpose to implement most security concepts for user.</p>
-                    <p>Used Tools: HTML, CSS, JS, PHP and MySQL </p>
-                    <a href="#" target="_blank" class="btn">View Project</a>
-                </div>
-                </div>
-
-                <div class="project-card">
-                <img src="img/galary.jpg" alt="Photo Galary" />
-                <div class="project-info">
-                    <h3>Photo Galary</h3>
-                    <p>responsive simple galary website displays pictures on the site tolerated by the database with a description for each one.</p>
-                    <br>
-                    <p>Used Tools: HTML, CSS, PHP and MySQL </p>
-                    <a href="https://github.com/MennaAhmd/Photos-gallery" target="_blank" class="btn">View Project</a>
-                </div>
-                </div>
+        <div class="project-card">
+          <img src="img/log.png" alt="Sign-in and login" />
+          <div class="project-info">
+            <h3>Sign-in & login system</h3>
+            <p>Modern, responsive sign-in and login page in purpose to implement most security concepts for user.</p>
+            <p>Used Tools: HTML, CSS, JS, PHP and MySQL</p>
+            <div class="project-links">
+              <a href="#" target="_blank" class="btn">View Project</a>
             </div>
-        </section>
+          </div>
+        </div>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section">
-            <h2>Contact <span>Me</span></h2>
-            <p>You can reach me via email or GitHub </p>
-            <p>Email: <a href="mailto:ma6858846@gmail.com">ma6858846@gmail.com</a></p>
-        </section>
+        <div class="project-card">
+          <img src="img/galary.jpg" alt="Photo Galary" />
+          <div class="project-info">
+            <h3>Photo Galary</h3>
+            <p>responsive simple galary website displays pictures on the site tolerated by the database with a description for each one.</p>
+            <p>Used Tools: HTML, CSS, PHP and MySQL</p>
+            <div class="project-links">
+              <a href="https://github.com/MennaAhmd/Photos-gallery" target="_blank" class="btn">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2>Contact <span>Me</span></h2>
+      <p>You can reach me via email or fill out the form below</p>
+      
+      <form class="contact-form" action="#" method="POST">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+      
+      <div class="contact-info">
+        <p>Email: <a href="mailto:ma6858846@gmail.com">ma6858846@gmail.com</a></p>
+      </div>
+    </section>
   </main>
 
   <!-- Footer -->
-<footer class="footer">
-  <div class="footer-content">
-   <!-- navigation -->
-    <nav class="footer-nav">
-      <ul class="nav-list">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    
-    <!-- social icons -->
-    <div class="footer-social-links">
-      <a href="https://www.linkedin.com/in/menna-ahmed-security/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="https://github.com/MennaAhmd" target="_blank"><i class="fa-brands fa-github"></i></a>
-      <a href="https://www.facebook.com/share/1aSWP7hidq/"><i class="fa-brands fa-facebook"></i></a>
-      <a href="https://discord.com/users/menna1120"><i class="fa-brands fa-discord"></i></a>
+  <footer class="footer">
+    <div class="footer-content">
+      <!-- navigation -->
+      <nav class="footer-nav">
+        <ul class="nav-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <!-- social icons -->
+      <div class="footer-social-links">
+        <a href="https://www.linkedin.com/in/menna-ahmed-security/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/MennaAhmd" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.facebook.com/share/1aSWP7hidq/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://discord.com/users/menna1120"><i class="fa-brands fa-discord"></i></a>
+      </div>
+      
+      <p class="copyright">&copy; 2025 Menna Ahmed. All rights reserved.</p>
     </div>
-    
-    <p class="copyright">&copy; 2025 Menna Ahmed. All rights reserved.</p>
-  </div>
-</footer>
-</body>
+  </footer>
 
+  <script>
+    // Dark/Light Mode Toggle
+    const modeToggle = document.getElementById('modeToggle');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    let darkMode = localStorage.getItem('darkMode') === 'true' || prefersDark;
+
+    function updateMode() {
+      if (darkMode) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        modeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        modeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+      }
+    }
+
+    modeToggle.addEventListener('click', () => {
+      darkMode = !darkMode;
+      localStorage.setItem('darkMode', darkMode);
+      updateMode();
+    });
+
+    updateMode();
+  </script>
+</body>
 </html>
