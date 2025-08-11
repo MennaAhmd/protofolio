@@ -3,8 +3,8 @@
 /* Define color variables for Light and Dark Modes */
 :root {
   /* Light Mode Colors */
-  --primary: #007bff; /* Blue */
-  --primary-hover: #0056b3; /* Darker Blue */
+  --primary: #007bff; 
+  --primary-hover: #0056b3; 
   --gradient-blue-start: #007bff;
   --gradient-blue-end: #00c6ff;
   --secondary-green: #28a745;
@@ -13,20 +13,20 @@
   --accent-orange: #fd7e14;
   --gradient-orange-start: #fd7e14;
   --gradient-orange-end: #ffc107;
-  --background-color: #F8F9FA; /* Very Light Gray */
-  --text-color: #212529; /* Dark Gray */
-  --medium-text-color: #6C757D; /* Medium Gray */
-  --card-background-color: #FFFFFF; /* White */
+  --background-color: #F8F9FA; 
+  --text-color: #212529; 
+  --medium-text-color: #6C757D; 
+  --card-background-color: #FFFFFF; 
 }
 
 [data-theme="dark"] {
-  /* Dark Mode Colors - Softer for the eyes */
-  --background-color: #1a202c; /* Dark Blue-Gray */
-  --text-color: #e2e8f0; /* Light Gray */
-  --medium-text-color: #a0aec0; /* Muted Gray */
-  --card-background-color: #2d3748; /* Slightly Lighter Dark Blue-Gray */
-  --primary: #66b3ff; /* Lighter Blue for dark mode */
-  --primary-hover: #4da6ff; /* Even lighter blue */
+  /* Dark Mode Colors */
+  --background-color: #1a202c; 
+  --text-color: #e2e8f0; 
+  --medium-text-color: #a0aec0; 
+  --card-background-color: #2d3748; 
+  --primary: #66b3ff;
+  --primary-hover: #4da6ff; 
   --gradient-blue-start: #66b3ff;
   --gradient-blue-end: #80d4ff;
   --secondary-green: #5cb85c;
@@ -177,7 +177,7 @@ nav.main-nav ul.nav-list li a:hover {
   transition: all 0.3s ease;
 }
 
-/* Main container padding  */
+/* Main container */
 main.container {
   padding-top: 100px;
   max-width: 1100px;
@@ -316,9 +316,9 @@ main.container {
 /* Hero Image */
 .hero-img {
   max-width: 320px;
-  border-radius: 20px;
+  border-radius: 100%;
   object-fit: cover;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 40px rgba(0, 123, 255, 0.377);
 }
 
 /* About Section */
@@ -937,8 +937,6 @@ main.container {
     padding: 20px 10px;
   }
 }
-
-/* Additional Responsive Improvements */
 @media (max-width: 1024px) {
   .hero-section h1 {
     font-size: 3rem;
@@ -1033,7 +1031,7 @@ main.container {
   transition-delay: 0.4s;
 }
 
-/* Enhanced hover effects */
+/*  hover effects */
 .skills-card:hover {
   transform: translateY(-15px) scale(1.03) !important;
   box-shadow: 0 20px 50px rgba(0, 123, 255, 0.5) !important;
@@ -1049,7 +1047,7 @@ main.container {
   transition: all 0.3s ease;
 }
 
-/* Professional loading animation */
+/* loading animation */
 @keyframes pulse {
   0%, 100% {
     opacity: 1;
@@ -1063,7 +1061,7 @@ main.container {
   animation: pulse 2s infinite;
 }
 
-/* Enhanced button animations */
+/* button animations */
 .btn-primary:hover {
   background: linear-gradient(135deg, var(--gradient-blue-start) 0%, var(--gradient-blue-end) 100%);
   transform: rotate(5deg) scale(1.05);
@@ -1081,7 +1079,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Professional fade-in for hero content */
+/* fade-in for hero content */
 .hero-content {
   animation: fadeInUp 1s ease-out;
 }
@@ -1097,7 +1095,7 @@ html {
   }
 }
 
-/* Enhanced navigation hover effects */
+/* navigation hover */
 nav.main-nav ul.nav-list li a:hover {
   color: var(--primary-hover);
   text-decoration: underline;
@@ -1105,7 +1103,7 @@ nav.main-nav ul.nav-list li a:hover {
   text-shadow: 0 2px 4px rgba(0, 123, 255, 0.3);
 }
 
-/* Professional loading state for images */
+/* loading state for images */
 img {
   transition: opacity 0.3s ease;
 }
@@ -1114,13 +1112,13 @@ img:not([src]) {
   opacity: 0;
 }
 
-/* Enhanced footer animations */
+/* footer animations */
 .footer-social-links a:hover {
   color: var(--primary);
   transform: translateY(-3px) scale(1.1);
 }
 
-/* Professional scroll indicator */
+/*scroll indicator */
 .scroll-indicator {
   position: fixed;
   top: 0;
