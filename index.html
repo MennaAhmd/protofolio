@@ -19,7 +19,18 @@
 
   <!-- Header -->
   <header class="main-header">
-    <nav class="main-nav">
+    <div class="logo">
+      <a href="index.html"><img src="img/logoweb.png" alt="Menna Ahmed Logo"></a>
+    </div>
+    
+    <!-- Hamburger Menu Button -->
+    <button class="hamburger-menu" id="hamburgerMenu" aria-label="Toggle navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
+    <nav class="main-nav" id="mainNav">
       <ul class="nav-list">
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -28,9 +39,6 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <div class="logo">
-      <a href="index.html"><img src="img/logoweb.png" alt="Menna Ahmed Logo"></a>
-    </div>
   </header>
 
   <!-- Main Content -->
@@ -45,7 +53,7 @@
         </p>
 
         <div class="hero-buttons">
-          <a href="#contact"><button class="btn btn-primary" title="Got a cool project? Let’s work together!">Hire me</button></a>
+          <a href="#contact"><button class="btn btn-primary" title="Got a cool project? Let's work together!">Hire me</button></a>
           <button class="btn btn-dark-outlined">
             <a href="https://drive.google.com/file/d/19qQHwHCSpPsWS_9mlXW_AHjwwKEe1_Ix/view?usp=sharing" download>View My CV</a>
           </button>
@@ -75,57 +83,56 @@
       <div class="skills-grid">
         <!-- Card 1 - Cybersecurity -->
         <div class="skills-card">
-          <img src="img/security.png" alt="Cybersecurity Icon" />
+          <div class="skills-icon">
+            <img src="img/security.png" alt="Cybersecurity Icon" />
+          </div>
           <div class="skills-info">
             <h3>Cybersecurity</h3>
-            <ul>
-              <li><strong>OWASP Top 10</strong>
-                <ul class="sub-list">
-                  <li>SQL Injection</li>
-                  <li>XSS</li>
-                </ul>
-              </li>
-              <li><strong>Security Tools</strong>
-                <ul class="sub-list">
-                  <li>Burp Suite</li>
-                  <li>Wireshark</li>
-                  <li>Metasploit</li>
-                  <li>Nmap</li>
-                  <li>John the Ripper</li>
-                </ul>
-              </li>
-            </ul>
+            <div class="skills-tags">
+              <span class="skill-tag">OWASP Top 10</span>
+              <span class="skill-tag">SQL Injection</span>
+              <span class="skill-tag">XSS</span>
+              <span class="skill-tag">Burp Suite</span>
+              <span class="skill-tag">Wireshark</span>
+              <span class="skill-tag">Metasploit</span>
+              <span class="skill-tag">Nmap</span>
+              <span class="skill-tag">John the Ripper</span>
+            </div>
           </div>
         </div>
 
         <!-- Card 2 - Web Development -->
         <div class="skills-card">
-          <img src="img/development.png" alt="Web Development Icon" />
+          <div class="skills-icon">
+            <img src="img/development.png" alt="Web Development Icon" />
+          </div>
           <div class="skills-info">
             <h3>Web Development</h3>
-            <ul>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>JavaScript</li>
-              <li>PHP</li>
-              <li>MySQL</li>
-              <li>Bootstrap</li>
-            </ul>
+            <div class="skills-tags">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">Bootstrap</span>
+            </div>
           </div>
         </div>
 
         <!-- Card 3 - Certifications -->
         <div class="skills-card">
-          <img src="img/certificate.png" alt="Certifications Icon" />
+          <div class="skills-icon">
+            <img src="img/certificate.png" alt="Certifications Icon" />
+          </div>
           <div class="skills-info">
             <h3>Certifications</h3>
-            <ul>
-              <li>Cybersecurity for Beginners</li>
-              <li>HCIA Security V4.0</li>
-              <li>Certified Ethical Hacker (CEH)</li>
-              <li>CompTIA Security+</li>
-              <li>CompTIA Network+</li>
-            </ul>
+            <div class="skills-tags">
+              <span class="skill-tag">Cybersecurity for Beginners</span>
+              <span class="skill-tag">HCIA Security V4.0</span>
+              <span class="skill-tag">Certified Ethical Hacker (CEH)</span>
+              <span class="skill-tag">CompTIA Security+</span>
+              <span class="skill-tag">CompTIA Network+</span>
+            </div>
           </div>
         </div>
       </div>
@@ -136,51 +143,103 @@
       <h2>My <span>Projects</span></h2>
       <div class="project-grid">
         <div class="project-card">
-          <img src="img/tourism.png" alt="Tourism Website" />
+          <div class="project-image">
+            <img src="img/tourism.png" alt="Tourism Website" />
+            <div class="project-overlay">
+              <div class="project-tools">
+                <span class="tool-tag featured">HTML5</span>
+                <span class="tool-tag featured">CSS3</span>
+                <span class="tool-tag featured">JavaScript</span>
+              </div>
+            </div>
+          </div>
           <div class="project-info">
             <h3>Tourism Website</h3>
             <p>a comprehensive tourism website designed to offer travelers a seamless and engaging experience using.</p>
-            <p>Used Tools: HTML5, CSS and JavaScript</p>
             <div class="project-links">
-              <a href="https://mennaahmd.github.io/Tourisum-website/" target="_blank" class="btn">Live Demo</a>
-              <a href="https://github.com/MennaAhmd/Tourisum-website" target="_blank" class="btn">View Project</a>
+              <a href="https://mennaahmd.github.io/Tourisum-website/" target="_blank" class="btn project-btn">
+                <i class="fas fa-external-link-alt"></i>
+                <span>Live Demo</span>
+              </a>
+              <a href="https://github.com/MennaAhmd/Tourisum-website" target="_blank" class="btn project-btn">
+                <i class="fab fa-github"></i>
+                <span>View Project</span>
+              </a>
             </div>
           </div>
         </div>
 
         <div class="project-card">
-          <img src="img/echomart.png" alt="echomart" />
+          <div class="project-image">
+            <img src="img/echomart.png" alt="echomart" />
+            <div class="project-overlay">
+              <div class="project-tools">
+                <span class="tool-tag featured">HTML5</span>
+                <span class="tool-tag featured">CSS3</span>
+                <span class="tool-tag featured">JavaScript</span>
+                <span class="tool-tag featured">Bootstrap</span>
+                <span class="tool-tag featured">PHP</span>
+                <span class="tool-tag featured">MySQL</span>
+              </div>
+            </div>
+          </div>
           <div class="project-info">
             <h3>E-commerce website</h3>
             <p>an e-commerce website for selling laptops included with powerful admin panel for managing inventory, orders, and more.</p>
-            <p>Used Tools: HTML5, CSS, JavaScript and Bootstrap for Frontend</p>
-            <p>PHP and MySQL for Backend</p>
             <div class="project-links">
-              <a href="https://github.com/MennaAhmd/Echomart" target="_blank" class="btn">View Project</a>
+              <a href="https://github.com/MennaAhmd/Echomart" target="_blank" class="btn project-btn">
+                <i class="fab fa-github"></i>
+                <span>View Project</span>
+              </a>
             </div>
           </div>
         </div>
 
         <div class="project-card">
-          <img src="img/log.png" alt="Sign-in and login" />
+          <div class="project-image">
+            <img src="img/log.png" alt="Sign-in and login" />
+            <div class="project-overlay">
+              <div class="project-tools">
+                <span class="tool-tag featured">HTML</span>
+                <span class="tool-tag featured">CSS</span>
+                <span class="tool-tag featured">JavaScript</span>
+                <span class="tool-tag featured">PHP</span>
+                <span class="tool-tag featured">MySQL</span>
+              </div>
+            </div>
+          </div>
           <div class="project-info">
             <h3>Sign-in & login system</h3>
             <p>Modern, responsive sign-in and login page in purpose to implement most security concepts for user.</p>
-            <p>Used Tools: HTML, CSS, JS, PHP and MySQL</p>
             <div class="project-links">
-              <a href="#" target="_blank" class="btn">View Project</a>
+              <a href="#" target="_blank" class="btn project-btn">
+                <i class="fab fa-github"></i>
+                <span>View Project</span>
+              </a>
             </div>
           </div>
         </div>
 
         <div class="project-card">
-          <img src="img/galary.jpg" alt="Photo Galary" />
+          <div class="project-image">
+            <img src="img/galary.jpg" alt="Photo Galary" />
+            <div class="project-overlay">
+              <div class="project-tools">
+                <span class="tool-tag featured">HTML</span>
+                <span class="tool-tag featured">CSS</span>
+                <span class="tool-tag featured">PHP</span>
+                <span class="tool-tag featured">MySQL</span>
+              </div>
+            </div>
+          </div>
           <div class="project-info">
             <h3>Photo Galary</h3>
             <p>responsive simple galary website displays pictures on the site tolerated by the database with a description for each one.</p>
-            <p>Used Tools: HTML, CSS, PHP and MySQL</p>
             <div class="project-links">
-              <a href="https://github.com/MennaAhmd/Photos-gallery" target="_blank" class="btn">View Project</a>
+              <a href="https://github.com/MennaAhmd/Photos-gallery" target="_blank" class="btn project-btn">
+                <i class="fab fa-github"></i>
+                <span>View Project</span>
+              </a>
             </div>
           </div>
         </div>
@@ -261,6 +320,33 @@
     });
 
     updateMode();
+
+    // Hamburger Menu Toggle
+    const hamburgerMenu = document.getElementById('hamburgerMenu');
+    const mainNav = document.getElementById('mainNav');
+
+    hamburgerMenu.addEventListener('click', () => {
+      hamburgerMenu.classList.toggle('active');
+      mainNav.classList.toggle('active');
+    });
+
+    // Close menu when clicking on a link
+    const navLinks = document.querySelectorAll('.nav-list a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        hamburgerMenu.classList.remove('active');
+        mainNav.classList.remove('active');
+      });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!hamburgerMenu.contains(e.target) && !mainNav.contains(e.target)) {
+        hamburgerMenu.classList.remove('active');
+        mainNav.classList.remove('active');
+      }
+    });
   </script>
 </body>
 </html>
+
