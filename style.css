@@ -315,10 +315,11 @@ main.container {
 
 /* Hero Image */
 .hero-img {
-  max-width: 320px;
-  border-radius: 100%;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 15px 40px rgba(0, 123, 255, 0.377);
+  box-shadow: 0 15px 40px rgba(0, 83, 171, 0.808);
 }
 
 /* About Section */
